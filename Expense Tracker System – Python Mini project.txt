@@ -1,0 +1,65 @@
+Expense Tracker System – Python Mini Project
+
+Project Description
+The Expense Tracker System is a menu-driven console application written in Python.
+The main purpose of this project is to help users record, view, and manage their daily expenses in a simple and organized manner.
+The program allows the user to:
+•Enter expense details such as date, category, and amount
+•View all saved expense records
+•Search expenses based on category
+•Save the expense data into a file for future use
+
+Features
+The following features are implemented in this project:
+•Add Expense: Allows the user to enter a new expense with date, category, and amount.
+•View Expenses: Displays all the expenses entered during the program execution in a readable format.
+•Search Expense by Category: Helps the user find expenses related to a specific category such as FOOD, TRAVEL, etc.
+•Save and Exit: Saves all expense records to a text file and safely exits the program.
+
+Concepts Used
+This project uses the core Python concepts taught in class, which are listed below with brief explanations:
+•Lists:
+Used to store multiple expense records.
+•Dictionaries:
+Used to store individual expense details like date, category, and amount.
+•Functions:
+Used to divide the program into smaller, manageable blocks for better readability and reuse.
+•Conditional Statements: Used to handle menu choices and decision-making logic.
+•Loops:
+A while loop is used to repeatedly display the menu until the user chooses to exit.
+•String Methods: Methods like strip() and upper() are used to clean and standardize user input.
+•Exception Handling: try and except blocks are used to handle invalid inputs, especially numeric values.
+•File Handling: Used to store expense data permanently in a text file.
+Data Storage Design
+The application uses a list of dictionaries for data storage.
+•The list stores multiple expense records.
+•Each dictionary represents one expense record.
+Example Expense Record:
+{"Date": "01-01-2026", "Category": "FOOD", "Amount": 250}
+
+ File Handling
+The project uses file handling to save expense data permanently.
+•File name used: expenses.txt
+•The file is created automatically when the user selects Save & Exit from the menu.
+•Each expense is saved as a separate line in the file.
+This ensures that the data is not lost after the program ends.
+
+Menu Options
+The program displays the following menu options:
+1.Add Expense
+2.View Expenses
+3.Search Expense by Category
+4.Save & Exit
+The menu continues to appear until the user chooses the exit option.
+
+Input Guidelines
+To ensure correct execution, the user should follow these input rules:
+•Date should be entered in DD-MM-YYYY format.
+•Category should be entered as text (for example: FOOD, TRAVEL).
+•Amount should be entered as a numeric value.
+Invalid numeric inputs are handled using exception handling.
+
+Output
+•The expense details are displayed clearly on the console.
+•Saved records can be viewed later in the expenses.txt file.
+
